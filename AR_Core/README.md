@@ -1,0 +1,1 @@
+This is the one of ArCore examples for android from [ArCore git repository](https://github.com/google-ar/arcore-android-sdk/blob/master/samples/hello_ar_java/app/src/main/java/com/google/ar/core/examples/java/helloar)
