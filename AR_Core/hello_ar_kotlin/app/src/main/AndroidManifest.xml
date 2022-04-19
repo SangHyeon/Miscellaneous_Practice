@@ -19,6 +19,7 @@
     package="com.google.ar.core.examples.kotlin.helloar">
 
   <uses-permission android:name="android.permission.CAMERA"/>
+  <!-- Need to check camera.ar and glEsVersion -->
   <!-- Limits app visibility in the Google Play Store to ARCore supported devices
        (https://developers.google.com/ar/devices). -->
   <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>

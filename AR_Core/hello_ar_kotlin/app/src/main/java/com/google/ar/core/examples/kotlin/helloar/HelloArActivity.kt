@@ -17,6 +17,8 @@ package com.google.ar.core.examples.kotlin.helloar
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.ar.core.Config
@@ -47,6 +49,7 @@ class HelloArActivity : AppCompatActivity() {
   lateinit var arCoreSessionHelper: ARCoreSessionLifecycleHelper
   lateinit var view: HelloArView
   lateinit var renderer: HelloArRenderer
+  lateinit var posiView: TextView
 
   val instantPlacementSettings = InstantPlacementSettings()
   val depthSettings = DepthSettings()
@@ -92,6 +95,7 @@ class HelloArActivity : AppCompatActivity() {
 
     depthSettings.onCreate(this)
     instantPlacementSettings.onCreate(this)
+    posiView = findViewById(R.id.positionView)
   }
 
   // Configure the session, using Lighting Estimation, and Depth mode.
@@ -140,5 +144,9 @@ class HelloArActivity : AppCompatActivity() {
   override fun onWindowFocusChanged(hasFocus: Boolean) {
     super.onWindowFocusChanged(hasFocus)
     FullScreenHelper.setFullScreenOnWindowFocusChanged(this, hasFocus)
+  }
+
+  fun clickClearButton(view: View) {
+    renderer.clickClearButton()
   }
 }
