@@ -1,0 +1,73 @@
+<!--
+   Copyright 2021 Google LLC
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.ar.core.examples.java.helloar.HelloArActivity">
+
+  <android.opengl.GLSurfaceView
+      android:id="@+id/surfaceview"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_gravity="top" />
+
+  <ImageButton
+      android:id="@+id/settings_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginBottom="25dp"
+      android:layout_marginEnd="25dp"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="25dp"
+      android:background="@android:color/transparent"
+      android:src="@drawable/ic_settings"
+      tools:ignore="SpeakableTextPresentCheck" />
+
+  <Button
+      android:id="@+id/clearButton"
+      android:layout_width="99dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginBottom="101dp"
+      android:layout_marginEnd="156dp"
+      android:layout_marginStart="156dp"
+      android:layout_marginTop="599dp"
+      android:backgroundTint="#03A9F4"
+      android:gravity="center"
+      android:onClick="clickClearButton"
+      android:text="CLEAR" />
+
+  <TextView
+      android:id="@+id/positionView"
+      android:layout_width="262dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginBottom="673dp"
+      android:layout_marginEnd="123dp"
+      android:layout_marginStart="26dp"
+      android:layout_marginTop="22dp"
+      android:text="Analyzing..." />
+
+</RelativeLayout>
